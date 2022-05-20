@@ -1,0 +1,76 @@
+using System;
+using static System.Console;
+
+namespace CsharpLean
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Задание 1
+            /*WriteLine("Введите число: ");
+            int num = int.Parse(ReadLine());
+            string result = num % 2 == 0 ? "Четное" : "Нечетное";
+            WriteLine(result);*/
+
+            //Задание 2
+            /*int summ = 0;
+
+            WriteLine("Введите вол-во карт у Вас на руках: ");
+            int all_card = int.Parse(ReadLine());
+
+            for (int i = 0; i < all_card; i++)
+            {
+                WriteLine("Введите карту: ");
+                var card = ReadLine();
+
+                switch (card)
+                {
+                    case "6":
+                        summ += int.Parse(card);
+                        break;
+                    case "7":
+                        summ += int.Parse(card);
+                        break;
+                    case "8":
+                        summ += int.Parse(card);
+                        break;
+                    case "9":
+                        summ += int.Parse(card);
+                        break;
+                    case "10":
+                        summ += int.Parse(card);
+                        break;
+                    default:
+                        if (card == "Q" || card == "K" || card == "J" || card == "T")
+                            summ += 10;
+                        break;                            
+                }
+
+            }
+            WriteLine(summ);
+            ReadKey();*/
+
+            //Здание 3
+
+          /*  WriteLine("Введите число: ");
+            int num = int.Parse(ReadLine());
+            bool tr = true;
+            int n = 1;
+
+            while (n < num)
+            {
+                if (num % n != 0)
+                    tr = false;
+                else
+                    tr = true;
+                n++;
+            }
+            if (tr == false)
+                WriteLine("Число простое");
+            else
+                WriteLine("Число составное");*/
+
+        }
+    }
+}
