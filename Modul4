@@ -1,0 +1,85 @@
+using System;
+using static System.Console;
+
+namespace CsharpLean
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            #region Задание 1
+
+            /*            Random random = new Random();
+
+                        WriteLine("Введите кол-во строк в матррице: ");
+                        int row = int.Parse(ReadLine());
+                        WriteLine("Введите кол-во столбцов в матррице: ");
+                        int column = int.Parse(ReadLine());
+
+                        int[,] matrix = new int[row, column];
+                        int summ = 0;
+
+                        for (int i = 0; i < matrix.GetLength(0); i++)
+                        {
+                            for (int j = 0; j < matrix.GetLength(1); j++)
+                            {
+                                matrix[i, j] = random.Next(1, 10);
+                                summ += matrix[i, j];
+                                Write($"{matrix[i, j]} ");
+                            }
+                            WriteLine();
+
+                        }
+                        WriteLine($"summ = {summ}");*/
+            #endregion
+
+            #region Задание 2
+            /*WriteLine("Введите длину последовательности: ");
+            int sequence = int.Parse(ReadLine());
+            int[] array = new int[sequence];
+            int min = int.MaxValue;
+
+            for (int i = 0; i < sequence; i++)
+            {
+                WriteLine("Введите число: ");
+                int num = int.Parse(ReadLine());
+                array[i] = num;
+            }
+            for (int j = 0; j < array.Length; j++)
+            { 
+                if (array[j] < min)
+                    min = array[j];
+            }
+            WriteLine($"Наименьшее число - {min}");
+            //Решение через сортировку
+            *//*WriteLine();
+            Array.Sort(array);
+            WriteLine($"Наименьшее число - {array[0]}");*/
+            #endregion
+
+            #region Задание 3
+            WriteLine("Введите максимальное число диапозона: ");
+            int range = int.Parse(ReadLine());
+            Random random = new Random();
+
+            int num = random.Next(0, range);
+            WriteLine("Угадайте число: ");
+            var peop_num = ReadLine();
+            while (int.Parse(peop_num) != num)
+            {
+                if (int.Parse(peop_num) < num) WriteLine("Число меньше загадоного. Попробуйте еще раз или нажмите пробел");
+                else if (int.Parse(peop_num) > num) WriteLine("Число больше загадоного. Попробуйте еще раз или нажмите пробел");
+                peop_num = ReadLine();
+                if (peop_num == " ")
+                {
+                    WriteLine("Сыграем в следующий раз");
+                    break;
+                }
+            }
+            if (peop_num != " ")
+                WriteLine("Вы угадали число");
+            
+            #endregion
+        }
+    }
+}
